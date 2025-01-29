@@ -1,5 +1,4 @@
 from random import randint
-from math import gcd
 from brain_games.games.structure import fire
 
 

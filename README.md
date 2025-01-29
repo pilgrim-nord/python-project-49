@@ -13,3 +13,6 @@
 ### Asciinema link brain-calc:
 [![asciicast](https://asciinema.org/a/kQ84u1Pgh15LC3e4bmvj5GSJy.svg)](https://asciinema.org/a/kQ84u1Pgh15LC3e4bmvj5GSJy)
 
+### Asciinema link brain-calc:
+[![asciicast](https://asciinema.org/a/bO5cjIkI9wRqUgYiGfGxxNwL1.svg)](https://asciinema.org/a/bO5cjIkI9wRqUgYiGfGxxNwL1)
+
