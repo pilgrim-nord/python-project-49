@@ -6,3 +6,10 @@
 
 ### Asciinema link brain-even:
 [![asciicast](https://asciinema.org/a/CMk3tEDgZzJQbcY9m1gy8yanj.svg)](https://asciinema.org/a/CMk3tEDgZzJQbcY9m1gy8yanj)
+
+### Asciinema link brain-calc:
+[![asciicast](https://asciinema.org/a/FRZ4e2s0UYpSFmo1tQXLcLu9E.svg)](https://asciinema.org/a/FRZ4e2s0UYpSFmo1tQXLcLu9E)
+
+### Asciinema link brain-calc:
+[![asciicast](https://asciinema.org/a/kQ84u1Pgh15LC3e4bmvj5GSJy.svg)](https://asciinema.org/a/kQ84u1Pgh15LC3e4bmvj5GSJy)
+
