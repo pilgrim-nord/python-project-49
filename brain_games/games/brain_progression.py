@@ -21,6 +21,7 @@ def task_and_right_answer():
             question += str(i) + ' '
         else:
             question += '.. '
+        question = (f"Question: {question}")
     return question, right_answer
 
 

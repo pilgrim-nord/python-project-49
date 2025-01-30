@@ -3,14 +3,14 @@ import prompt
 
 def fire(rules, task_and_right_answer):
 	print('Welcome to the Brain Games!')
-	name = prompt.string('May I have your name?')
+	name = prompt.string("May I have your name? ")
 	print(f"Hello, {name}!")
 	rules()
 	is_correct = True
 	for i in range(3):
 		question, right_answer = task_and_right_answer()
 		print(question)
-		user_answer = prompt.string('Your answer:')
+		user_answer = prompt.string("Your answer: ")
 		if user_answer.lower() != str(right_answer):
 			is_correct = False
 			break

@@ -10,7 +10,7 @@ def task_and_right_answer():
     number1 = randint(1, 20)
     number2 = randint(1, 20)
     sign = choice(['+', '-', '*'])
-    question = (f"Question:{number1}{sign}{number2}")
+    question = (f"Question: {number1} {sign} {number2}")
     if sign == '+':
         right_answer = number1 + number2
     elif sign == '-':
