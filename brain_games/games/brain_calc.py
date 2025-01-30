@@ -7,16 +7,16 @@ def rules():
 
 
 def task_and_right_answer():
-    number_1 = randint(1, 20)
-    number_2 = randint(1, 20)
+    number1 = randint(1, 20)
+    number2 = randint(1, 20)
     sign = choice(['+', '-', '*'])
-    question = (f"Question:{number_1}{sign}{number_2}")
+    question = (f"Question:{number1}{sign}{number2}")
     if sign == '+':
-        right_answer = number_1 + number_2
+        right_answer = number1 + number2
     elif sign == '-':
-        right_answer = number_1 - number_2
+        right_answer = number1 - number2
     elif sign == '*':
-        right_answer = number_1 * number_2
+        right_answer = number1 * number2
     return question, right_answer
 
 

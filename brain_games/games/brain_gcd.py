@@ -7,15 +7,15 @@ def rules():
 
 
 def task_and_right_answer():
-    num1 = randint(1, 100)
-    num2 = randint(1, 100)
-    question = f"Question: {num1} {num2}"
-    while num1 != 0 and num2 != 0:
-        if num1 > num2:
-            num1 = num1 % num2
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    question = f"Question: {number1} {number2}"
+    while number1 != 0 and number2 != 0:
+        if number1 > number2:
+            number1 = number1 % number2
         else:
-            num2 = num2 % num1
-    right_answer = num1 + num2
+            number2 = number2 % number1
+    right_answer = number1 + number2
     return question, right_answer
 
 
