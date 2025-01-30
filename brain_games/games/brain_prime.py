@@ -9,7 +9,7 @@ def rules():
 
 def task_and_right_answer():
     number = randint(1, 100)
-    question = f"Question:{number}"
+    question = f"Question: {number}"
     right_answer = 'yes'
     if number < 2:
         right_answer = 'no'
