@@ -1,24 +1,21 @@
 from random import randint, choice
 from brain_games.game_engine import fire
 
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 20
 
-def rules():
-    print('What is the result of the expression?')
+GAME_DESCRIPTION = 'What is the result of the expression?'
 
 
-def task_and_right_answer():
-    number1 = randint(1, 20)
-    number2 = randint(1, 20)
+def create_task_and_right_answer():
+    random_number1 = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
+    random_number2 = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     operation = choice(['+', '-', '*'])
-    question = (f"Question: {number1} {operation} {number2}")
+    question = (f"Question: {random_number1} {operation} {random_number2}")
     if operation == '+':
-        right_answer = number1 + number2
+        right_answer = random_number1 + random_number2
     elif operation == '-':
-        right_answer = number1 - number2
+        right_answer = random_number1 - random_number2
     elif operation == '*':
-        right_answer = number1 * number2
+        right_answer = random_number1 * random_number2
     return question, right_answer
-
-
-def run():
-    fire(rules, task_and_right_answer)

@@ -15,23 +15,23 @@ name = "hexlet-code"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
-    { name = "asciinema" },
     { name = "prompt" },
 ]
 
 [package.dev-dependencies]
 dev = [
+    { name = "asciinema" },
     { name = "ruff" },
 ]
 
 [package.metadata]
-requires-dist = [
-    { name = "asciinema", specifier = ">=2.4.0" },
-    { name = "prompt", specifier = ">=0.4.1" },
-]
+requires-dist = [{ name = "prompt", specifier = ">=0.4.1" }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "ruff", specifier = ">=0.9.3" }]
+dev = [
+    { name = "asciinema", specifier = ">=2.4.0" },
+    { name = "ruff", specifier = ">=0.9.3" },
+]
 
 [[package]]
 name = "prompt"

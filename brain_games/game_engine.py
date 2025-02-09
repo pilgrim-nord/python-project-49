@@ -1,15 +1,16 @@
 import prompt
 
+GAME_ATTEMPTS = 3 
 
-def fire(rules, task_and_right_answer):
-	game_attempts = 3 
+
+def fire(game_rules, create_task_and_right_answer):
 	print('Welcome to the Brain Games!')
 	name = prompt.string('May I have your name? ')
 	print(f'Hello, {name}!')
-	rules()
+	print(game_rules)
 	is_correct = True
-	for i in range(game_attempts):
-		question, right_answer = task_and_right_answer()
+	for _ in range(GAME_ATTEMPTS):
+		question, right_answer = create_task_and_right_answer()
 		print(question)
 		user_answer = prompt.string('Your answer: ')
 		if user_answer.lower() != str(right_answer):

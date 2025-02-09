@@ -2,11 +2,13 @@ from random import randint
 from math import sqrt
 from brain_games.game_engine import fire
 
+MIN_RANDOM_NUMBER = 1
+MAX_RANDOM_NUMBER = 100
 
-def rules():
-	print('Answer "yes" if given number is prime. Otherwise answer "no".')
+GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-def is_prime(num):
+
+def is_prime(number):
     if number < 2:
         return False
     else:
@@ -16,16 +18,12 @@ def is_prime(num):
     return True
 
 
-def task_and_right_answer():
-    number = randint(1, 100)
-    question = f"Question: {number}"
+def create_task_and_right_answer():
+    random_number = randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
+    question = f"Question: {random_number}"
     right_answer = 'yes'
-    if is_prime(number):
+    if is_prime(random_number):
         right_answer = 'yes'
     else:
         right_answer = 'no'
     return question, right_answer
-
-
-def run():
-	fire(rules, task_and_right_answer)
