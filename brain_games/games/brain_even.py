@@ -1,5 +1,5 @@
 from random import randint
-from brain_games.games.structure import fire
+from brain_games.game_engine import fire
 
 
 def rules():

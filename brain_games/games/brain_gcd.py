@@ -1,5 +1,6 @@
+import math
 from random import randint
-from brain_games.games.structure import fire
+from brain_games.game_engine import fire
 
 
 def rules():
@@ -7,15 +8,11 @@ def rules():
 
 
 def task_and_right_answer():
-    number1 = randint(1, 100)
-    number2 = randint(1, 100)
-    question = f"Question: {number1} {number2}"
-    while number1 != 0 and number2 != 0:
-        if number1 > number2:
-            number1 = number1 % number2
-        else:
-            number2 = number2 % number1
-    right_answer = number1 + number2
+    random_number1 = randint(1, 100)
+    random_number2 = randint(1, 100)
+    question = f"Question: {random_number1} {random_number2}"
+    right_answer = math.gcd(random_number1, random_number2)
+    
     return question, right_answer
 
 

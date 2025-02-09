@@ -1,5 +1,5 @@
 from random import randint, choice
-from brain_games.games.structure import fire
+from brain_games.game_engine import fire
 
 
 def rules():
@@ -9,13 +9,13 @@ def rules():
 def task_and_right_answer():
     number1 = randint(1, 20)
     number2 = randint(1, 20)
-    sign = choice(['+', '-', '*'])
-    question = (f"Question: {number1} {sign} {number2}")
-    if sign == '+':
+    operation = choice(['+', '-', '*'])
+    question = (f"Question: {number1} {operation} {number2}")
+    if operation == '+':
         right_answer = number1 + number2
-    elif sign == '-':
+    elif operation == '-':
         right_answer = number1 - number2
-    elif sign == '*':
+    elif operation == '*':
         right_answer = number1 * number2
     return question, right_answer
 
