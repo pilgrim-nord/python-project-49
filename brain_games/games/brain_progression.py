@@ -1,5 +1,4 @@
 from random import randint, choice
-from brain_games.game_engine import fire
 
 MIN_START_PROGRESSION = 1
 MAX_START_PROGRESSION = 15

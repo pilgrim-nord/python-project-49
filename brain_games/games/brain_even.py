@@ -1,5 +1,4 @@
 from random import randint
-from brain_games.game_engine import fire
 
 MIN_RANDOM_NUMBER = 1
 MAX_RANDOM_NUMBER = 100
