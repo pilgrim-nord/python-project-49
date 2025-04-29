@@ -14,18 +14,17 @@ GAME_DESCRIPTION = 'What number is missing in the progression?'
 def create_task_and_right_answer():
     first_number = randint(MIN_START_PROGRESSION, MAX_START_PROGRESSION)
     step = randint(MIN_STEP_PROGRESSION, MAX_STEP_PROGRESSION)
-    task_string = []
+    progression = []
     current_number = first_number
+
     for _ in range(PROGRESSION_LENGTH):
-        task_string.append(current_number)
+        progression.append(current_number)
         current_number += step
+
+    answer_position = randint(1, PROGRESSION_LENGTH - 1)
+    right_answer = progression[answer_position]
+    progression[answer_position] = '..'
+    question_line = ' '.join(progression)
     
-    right_answer = choice(task_string)
-    question = ''
-    for i in task_string:
-        if i != right_answer:
-            question += str(i) + ' '
-        else:
-            question += '.. '
-    question = (f"Question: {question}")
+    question = (f'Question: {question_line}')
     return question, right_answer
