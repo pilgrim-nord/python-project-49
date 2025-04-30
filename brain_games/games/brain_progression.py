@@ -22,9 +22,9 @@ def create_task_and_right_answer():
         current_number += step
 
     answer_position = randint(1, PROGRESSION_LENGTH - 1)
-    right_answer = progression[answer_position]
+    right_answer = str(progression[answer_position])
     progression[answer_position] = '..'
-    question_line = ' '.join(progression)
+    question_line = ' '.join(map(str, progression))
     
     question = (f'Question: {question_line}')
     return question, right_answer
