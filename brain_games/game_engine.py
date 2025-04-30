@@ -24,5 +24,5 @@ def fire(game_rules, create_task_and_right_answer):
         else:
             print('Correct!')
 
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
         
